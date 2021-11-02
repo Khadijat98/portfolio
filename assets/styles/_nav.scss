@@ -1,0 +1,71 @@
+@import "_variables";
+
+#section-1 {
+  min-height: $desktop;
+
+  .background-img {
+    position: absolute;
+    background: url(media/portfolio-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: $desktop;
+    z-index: -1;
+    opacity: 60%;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding-left: 20px;
+  gap: 15px;
+  border-bottom: 1px solid #721D42;
+
+    .nav__logo {
+      width: 15%;
+      font-size: 40px;
+      text-shadow: 1px 1px #F1E2E9, 2px 2px #F1E2E9;
+    }
+
+    .nav__link {
+      list-style-type: none;
+      padding-inline: 30px;
+      margin: 30px;
+      width: 40%;
+      font-weight: bold;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+  @media only screen and (min-width: 320px) {
+    flex-direction: row;
+  }
+}
+
+
+.hero__welcome-subtitle {
+  display: inline-block;
+}
+
+.hero__welcome-subtitle > p {
+  text-align: left;
+  padding-left: 330px;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.hero__arrow {
+  padding-left: 500px;
+  font-size: 100px;
+  height: 55px;
+}
