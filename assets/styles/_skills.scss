@@ -1,0 +1,28 @@
+
+.skills__header {
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 0px 0px 1px #721D42, 0px 0px 1px #721D42, 0px 0px 1px #721D42 ;
+  text-decoration: underline 2px solid #721D42;
+  text-underline-offset: 15px;
+  margin: 120px 0px ;
+  
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  justify-items: center;
+  
+  border: 2px solid black;
+  border-radius: 29px;
+  background-color: #F1E2E9;
+  margin: 0 20px;
+  padding: 30px 0px;
+}
+
+#skills__icon-label:hover {
+  font-size: 3em;
+}
+
