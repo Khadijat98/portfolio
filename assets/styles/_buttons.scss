@@ -1,13 +1,15 @@
 
 @import "_variables";
 
-.hero-btn__container{
-  display: flex;
+.hero-btn__container {
+  display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 
   .hero-btn {
+    justify-self: center;
+    align-self: end;
     background-color: #721D42;
     color: #F1E2E9;
     text-align: center;
@@ -33,12 +35,12 @@
       18px 19px #532853, 19px 20px #532853,
       22px 23px black ;
 
-    
+
   @media only screen and (min-width: $mobile) {
     line-height: 60px;
     font-size: 18px;
     padding: 20px 30px;
-  
+    max-width: 100vw;
   }
   }
 
@@ -66,7 +68,7 @@
   gap: 20px;
 }
 
-.project__dp-btn {
+.project__dp-btn, .contact-form__submit-btn  {
   background-color: #721D42;
   color: #F1E2E9;
   text-align: center;
@@ -78,7 +80,7 @@
   box-shadow: 0px 1px #532853, 1px 2px #532853, 2px 3px black;
 }
 
-.project__dp-btn:hover  {
+.project__dp-btn:hover, .contact-form__submit-btn:hover   {
   background-color: #A1245B;
 }
 
@@ -98,7 +100,18 @@
   background-color: #7D217D;
 }
 
-.project__dp-btn:active, .project__code-btn:active {
+.project__dp-btn:active, .project__code-btn:active, .contact-form__submit-btn:active  {
   box-shadow: 1px 1px black;
   transform: translate(1px,2px);
+}
+
+.contact-form__submit-btn-container {
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (min-width: $mobile) {
+    max-height: 100%;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
 }

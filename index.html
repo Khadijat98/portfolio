@@ -18,8 +18,7 @@
 
   
   <div id="section-1">
-    <div class="background-img"></div>
-
+    <div class="hero__background-img"></div>
     <nav class="nav"> 
       <h1>
         <a href="#section-1" class="nav__logo" id="nav__link">KO</a>
@@ -28,33 +27,26 @@
         <a href="#section-2" id="nav__link">Projects</a>
         <a href="#section-3" id="nav__link">Skills</a>
         <a href="#section-4" id="nav__link">About Me</a>
-        <a href="" id="nav__link">Contact</a>
+        <a href="#section-5" id="nav__link">Contact</a>
       </div>
     </nav>
-    
-    
     <div class="hero-btn__container">
       <a href="#section-2" class="hero-btn">
         <h2 class="hero__welcome">Hi! My Name is Khadijat.<br>I am a Junior Software Developer based in London.</h2>
       </a>
+      <subtitle class="hero__welcome-subtitle">
+        <div class="hero__arrow">&#x21ee</div>
+        <p class="hero__welcome-subtitle-text"><em>Click to see my work!</em></p>
+      </subtitle> 
     </div>
-
-    <!-- <subtitle class="hero__welcome-subtitle">
-      <div class="hero__arrow">&#10548</div>
-      <p><em>Push to see my work!</em></p>
-    </subtitle>  -->
-
-    
+       
   </div>
 
 
 
   <div id="section-2">
-
     <h3 class="projects__header">Projects</h3>
-
     <div class="projects__container">
-
       <section class="project">
         <h4 class="project__title">Project 1</h4>
         <div class="project__img-container">
@@ -138,15 +130,11 @@
           <a href="" class="project__code-btn">Code</a>
         </div>
       </section>
-
     </div>
 
   </div>
-
     <div id="section-3">
-
       <h3 class="skills__header">Skills</h3>
-
       <div class="skills__container">
         <i class="fa-brands fa-git fa-2x" title="git" id="skills__icon-label"></i>
         <i class="fa-brands fa-github fa-2x" title="github" id="skills__icon-label"></i>
@@ -157,15 +145,11 @@
         <i class="fa-brands fa-bootstrap fa-2x" title="Bootstrap" id="skills__icon-label"></i>
         <i class="fa-brands fa-js fa-2x" title="JavaScript" id="skills__icon-label"></i>
       </div>
-
     </div>
 
   <div id="section-4">
-
     <h3 class="about-me__header">About Me</h3>
-
     <div class="about-me__container">
-      
         <div class="about-me__img-container">
           <div class="about-me__img"></div>
         </div>
@@ -177,9 +161,36 @@
           <a href="http://github.com/Khadijat98" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2x" title="github" id="about-me__icon-label"></i></a>
           <a href="http://www.linkedin.com/in/khadijat-oyeleye-726a2216a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2x" title="LinkedIn" id="about-me__icon-label"></i></a>
         </div>
-      
     </div>
+  </div>
 
+  <div id="section-5">
+    <h3 class="contact__header">Contact</h3>
+    <div class="contact-form__container">
+      
+      <form action="https://formspree.io/f/mpzkgjoz" method= "POST" class="contact-form">
+        <!--Full Name-->
+        <label for="fullname" class="contact-form__field-title">Full Name:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Jane Doe" class="contact-form__field" required>
+        <!--Email-->
+        <label for="email" class="contact-form__field-title">Email:</label>
+        <input type="text" name="email" id="email" placeholder="janedoe@myemail.co.uk" class="contact-form__field" required>
+        <!--Message-->
+        <label for="message" class="contact-form__field-title">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="What would you like to say?" class="contact-form__field" required></textarea>
+
+        <!--Submit Button-->
+        <div class="contact-form__submit-btn-container">
+          <button class="contact-form__submit-btn">Submit</button>
+        </div>
+
+        <div class="contact__icon-container">
+          <a href="http://github.com/Khadijat98" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-2x" title="github" id="contact__icon-label"></i></a>
+          <a href="http://www.linkedin.com/in/khadijat-oyeleye-726a2216a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2x" title="LinkedIn" id="contact__icon-label"></i></a>
+        </div>
+
+      </form>
+    </div>
   </div>
 
 </body>
