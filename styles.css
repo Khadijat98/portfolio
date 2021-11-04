@@ -41,6 +41,10 @@
   padding: 0px 30px;
 }
 
+#nav__link:hover {
+  color: #721D42;
+}
+
 .nav, .hero-btn, .projects__header, .project__title, .project__dp-btn, .project__code-btn, .skills__header, .about-me__header, .contact__header, .contact-form__submit-btn {
   font-family: "Montserrat", sans-serif;
 }
