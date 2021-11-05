@@ -23,7 +23,10 @@
       <h1>
         <a href="#section-1" class="nav__logo" id="nav__link">KO</a>
       </h1>
-      <div class="nav__link-container">
+      <button class="nav__hamburger-menu" id="navHamburgerMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav__link-container" id="nav__link-container">
         <a href="#section-2" id="nav__link">Projects</a>
         <a href="#section-3" id="nav__link">Skills</a>
         <a href="#section-4" id="nav__link">About Me</a>
@@ -130,19 +133,43 @@
         </div>
       </section>
     </div>
-
   </div>
+
     <div id="section-3">
       <h3 class="skills__header">Skills</h3>
       <div class="skills__container">
-        <i class="fa-brands fa-git fa-2x" title="git" id="skills__icon-label"></i>
-        <i class="fa-brands fa-github fa-2x" title="github" id="skills__icon-label"></i>
-        <i class="fa-brands fa-figma fa-2x" title="figma" id="skills__icon-label"></i>
-        <i class="fa-brands fa-html5 fa-2x" title="HTML 5" id="skills__icon-label"></i>
-        <i class="fa-brands fa-css3-alt fa-2x" title="CSS 3" id="skills__icon-label"></i>
-        <i class="fa-brands fa-sass fa-2x" title="Sass" id="skills__icon-label"></i>
-        <i class="fa-brands fa-bootstrap fa-2x" title="Bootstrap" id="skills__icon-label"></i>
-        <i class="fa-brands fa-js fa-2x" title="JavaScript" id="skills__icon-label"></i>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-git fa-2x" data-title="git" id="skills__icon"></i>
+          <p class="skills__icon-label">git</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-github fa-2x" title="github" id="skills__icon"></i>
+          <p class="skills__icon-label">github</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-figma fa-2x" title="figma" id="skills__icon"></i>
+          <p class="skills__icon-label">Figma</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-html5 fa-2x" title="HTML 5" id="skills__icon"></i>
+          <p class="skills__icon-label">HTML 5</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-css3-alt fa-2x" title="CSS 3" id="skills__icon"></i>
+          <p class="skills__icon-label">CSS 3</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-sass fa-2x" title="Sass" id="skills__icon"></i>
+          <p class="skills__icon-label">Sass</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-bootstrap fa-2x" title="Bootstrap" id="skills__icon"></i>
+          <p class="skills__icon-label">Bootstrap</p>
+        </div>
+        <div class="skills__icon-container">
+          <i class="fa-brands fa-js fa-2x" title="JavaScript" id="skills__icon"></i>
+          <p class="skills__icon-label">JavaScript</p>
+        </div>
       </div>
     </div>
 
@@ -192,6 +219,8 @@
     </div>
   </div>
 
+  <script src="script.js"></script>
+  
 </body>
 
 

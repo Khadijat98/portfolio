@@ -19,10 +19,19 @@
   border-radius: 29px;
   background-color: #F1E2E9;
   margin: 0 20px;
-  padding: 30px 0px;
+  padding: 30px 15px;
 }
 
-#skills__icon-label:hover {
-  font-size: 3em;
+.skills__icon-container {
+  text-align: center;
 }
+.skills__icon-label {
+  padding-top: 15px;
+  text-align: left;
+  font-weight: bold;
+  color: #532853;
+}
+
+
+
 
