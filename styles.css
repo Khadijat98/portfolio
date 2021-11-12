@@ -20,6 +20,17 @@
   font-size: 30px;
   text-shadow: 1px 1px #F1E2E9, 2px 2px #F1E2E9;
 }
+.nav .nav__logo.scroll {
+  text-shadow: 1px 1px black, 2px 2px black;
+}
+.nav .nav__logo.scroll:hover {
+  color: black;
+  text-shadow: 1px 1px #F1E2E9, 2px 2px #F1E2E9;
+}
+
+.nav.scroll {
+  background-color: #721D42;
+}
 
 .nav__hamburger-menu {
   background-color: transparent;
@@ -39,11 +50,20 @@
   color: #721D42;
 }
 
+.nav__hamburger-menu-bars.scroll {
+  color: #F1E2E9;
+}
+
+.nav__hamburger-menu-bars.scroll:hover {
+  color: black;
+}
+
 .nav__link-container {
   display: none;
   width: 100%;
   flex-direction: column;
   gap: 5px;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 768px) {
   .nav__link-container {
@@ -60,7 +80,7 @@
   display: flex;
 }
 
-#nav__link {
+.nav__link {
   color: black;
   text-decoration: none;
   font-weight: bold;
@@ -68,7 +88,15 @@
   padding: 0px 30px;
 }
 
-#nav__link:hover {
+.nav__link.scroll {
+  color: #F1E2E9;
+}
+
+.nav__link.scroll:hover {
+  color: black;
+}
+
+.nav__link:hover {
   color: #721D42;
 }
 
@@ -275,7 +303,7 @@
 
 .skills__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   justify-items: center;
   border: 2px solid black;
@@ -283,6 +311,11 @@
   background-color: #F1E2E9;
   margin: 0 20px;
   padding: 30px 15px;
+}
+@media only screen and (min-width: 768px) {
+  .skills__container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .skills__icon-container {
