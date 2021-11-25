@@ -13,7 +13,7 @@ const navLogo = document.querySelector(".nav__logo");
 const navHamburgerMenuBars = document.querySelector(".nav__hamburger-menu-bars")
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 980) {
+  if (window.scrollY > 900) {
     nav.classList.add("scroll");
     navLinks.forEach((navLink) => {
       navLink.classList.add("scroll");
