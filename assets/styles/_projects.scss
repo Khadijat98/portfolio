@@ -35,13 +35,31 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
   height: 200px;
   width: 200px;
+}
+
+.project__img--one {
+  background-image: url("assets/media/js-calculator.png");
+  height: 300px;
+  width: 300px;
+}
+
+.project__img--two {
+  background-image: url("assets/media/tic-tac-toe.png");
+  height: 400px;
+  width: 300px;
 }
 
 .project__description {
   padding: 10px 2px;
   text-align: center;
+}
+
+.project__icon {
+  padding: 0px 5px;
 }
 
 @media only screen and (min-width: $mobile) {
