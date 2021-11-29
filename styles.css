@@ -104,7 +104,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.hero__welcome-subtitle, .project__description, .about-me__description, .contact-form, .contact-form__field, .skills__icon-label {
+.hero__welcome-subtitle, .project__description, .about-me__description, .contact-form, .contact-form__field, .skills__icon-label, .project__icon-label {
   font-family: "Esteban", serif;
 }
 
@@ -278,16 +278,28 @@
   width: 200px;
 }
 
-.project__img--one {
+.project__img-one {
   background-image: url("assets/media/js-calculator.PNG");
-  height: 300px;
+  height: 400px;
   width: 300px;
 }
 
-.project__img--two {
+.project__img-two {
   background-image: url("assets/media/tic-tac-toe.PNG");
   height: 400px;
   width: 300px;
+}
+
+.project__img-three {
+  background-image: url("assets/media/morse-code-translator.PNG");
+  height: 350px;
+  width: 350px;
+}
+@media only screen and (min-width: 1200px) {
+  .project__img-three {
+    height: 400px;
+    width: 400px;
+  }
 }
 
 .project__description {
@@ -295,8 +307,31 @@
   text-align: center;
 }
 
+.project__icon-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.project__icon-label {
+  display: none;
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #532853;
+}
+
 .project__icon {
-  padding: 0px 5px;
+  padding: 5px 5px;
+}
+
+.project__icon:hover + .project__icon-label {
+  display: flex;
+}
+
+.project__icon.hide {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {

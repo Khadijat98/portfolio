@@ -1,16 +1,15 @@
 
 const navHamburgerMenu = document.querySelector(".nav__hamburger-menu");
 const navLinkContainer = document.querySelector(".nav__link-container");
+const nav = document.querySelector(".nav");
+const navLinks = document.querySelectorAll(".nav__link");
+const navLogo = document.querySelector(".nav__logo");
+const navHamburgerMenuBars = document.querySelector(".nav__hamburger-menu-bars");
+const projectIcon = document.querySelectorAll(".project__icon");
 
 navHamburgerMenu.addEventListener("click", () => {
   navLinkContainer.classList.toggle("show");
 });
-
-
-const nav = document.querySelector(".nav");
-const navLinks = document.querySelectorAll(".nav__link");
-const navLogo = document.querySelector(".nav__logo");
-const navHamburgerMenuBars = document.querySelector(".nav__hamburger-menu-bars")
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 900) {
@@ -30,3 +29,9 @@ window.addEventListener("scroll", () => {
     navHamburgerMenuBars.classList.remove("scroll");
   }
 });
+
+
+
+projectIcon.addEventListener("mouseover", () => {
+  projectIcon.classList.add("hide");
+})
