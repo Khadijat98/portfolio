@@ -5,7 +5,6 @@ const nav = document.querySelector(".nav");
 const navLinks = document.querySelectorAll(".nav__link");
 const navLogo = document.querySelector(".nav__logo");
 const navHamburgerMenuBars = document.querySelector(".nav__hamburger-menu-bars");
-const projectIcon = document.querySelectorAll(".project__icon");
 
 navHamburgerMenu.addEventListener("click", () => {
   navLinkContainer.classList.toggle("show");
@@ -29,9 +28,3 @@ window.addEventListener("scroll", () => {
     navHamburgerMenuBars.classList.remove("scroll");
   }
 });
-
-
-
-projectIcon.addEventListener("mouseover", () => {
-  projectIcon.classList.add("hide");
-})
