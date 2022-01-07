@@ -302,6 +302,19 @@
   }
 }
 
+.project__img-four {
+  background-image: url("assets/media/punk-api.PNG");
+  height: 350px;
+  width: 350px;
+  background-position: left;
+}
+@media only screen and (min-width: 1200px) {
+  .project__img-four {
+    height: 400px;
+    width: 400px;
+  }
+}
+
 .project__description {
   padding: 10px 2px;
   text-align: center;
