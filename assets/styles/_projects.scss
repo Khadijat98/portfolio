@@ -75,6 +75,18 @@
   }
 }
 
+.project__img-five {
+  background-image: url("assets/media/oae-event-cms.PNG");
+  height: 350px;
+  width: 350px;
+  background-position: left;
+
+  @media only screen and (min-width: $desktop) {
+    height: 450px;
+    width: 450px;
+  }
+}
+
 .project__description {
   padding: 10px 2px;
   text-align: center;
